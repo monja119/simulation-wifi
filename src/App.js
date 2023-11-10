@@ -42,7 +42,7 @@ function App() {
       <button onClick={send}>Send</button>
       <br />
       
-      {
+      {/* {
         (method === 'POST' || method === 'PUT') && (
           <>
             <textarea
@@ -52,7 +52,13 @@ function App() {
             />
           </>
         )
-      }
+      } */}
+
+      <textarea
+        name='data'
+        value={data}
+        onChange={e => setData(e.target.value)}
+      />
 
       {
         response && (
